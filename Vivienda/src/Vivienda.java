@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Paqui Elena - Jaime Gomez
+ * @author Paqui Elena Jaime Gomez
  * @version 0.2 20/03/2022
  * @see Hogar
  */
