@@ -6,7 +6,9 @@
 
 /**
  *
- * @author Paqui Elena
+ * @author Paqui Elena - Jaime Gomez
+ * @version 0.2 20/03/2022
+ * @see Hogar
  */
 public class Vivienda  
 {
@@ -19,7 +21,7 @@ public class Vivienda
     }
 
     /**
-     * @param precio the precio to set
+     * @param precio Precio a cambiar
      */
     
     public void setPrecio(double precio) {
@@ -29,14 +31,14 @@ public class Vivienda
     
 
     /**
-     * @return the numHabitaciones
+     * @return Numero de habitaciones
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * @param numHabitaciones Numero de habitaciones a modificar
      */
     
     public void setNumHabitaciones(int numHabitaciones) {
@@ -44,14 +46,14 @@ public class Vivienda
     }
 
     /**
-     * @return the superficie
+     * @return Superficie
      */
     public double getSuperficie() {
         return superficie;
     }
 
     /**
-     * @param superficie the superficie to set
+     * @param superficie Superficie a cambiar
      */
     
     public void setSuperficie(double superficie) {
@@ -59,14 +61,14 @@ public class Vivienda
     }
 
     /**
-     * @return the parking
+     * @return Parking
      */
     public boolean isParking() {
         return parking;
     }
 
     /**
-     * @param parking the parking to set
+     * @param parking Indicar si tiene o no parking
      */
     
     public void setParking(boolean parking) {
@@ -74,14 +76,14 @@ public class Vivienda
     }
 
     /**
-     * @return the estado
+     * @return Estado
      */
     public String getEstado() {
         return estado;
     }
 
     /**
-     * @param estado the estado to set
+     * @param estado Modificar el estado
      */
     
     public void setEstado(String estado) {
@@ -89,19 +91,21 @@ public class Vivienda
     }
 
     /**
-     * @return the propietario
+     * @return Propietario
      */
     public String getPropietario() {
         return propietario;
     }
 
     /**
-     * @param propietario the propietario to set
+     * @param propietario Modificar el propietario
      */
     
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
+    
+    
     private double precio;
     private int numHabitaciones;
     private double superficie;
@@ -109,11 +113,24 @@ public class Vivienda
     private String estado;
     private String propietario;
     
+    /**
+     *
+     * @param precio
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
     
+    /**
+     *
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario
+     */
     public Vivienda (double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario)
     {
         this.precio = precio;
@@ -124,6 +141,11 @@ public class Vivienda
         this.propietario = propietario;
         
     }
+
+    /**
+     *
+     * @param descuento Descuento que se aplica
+     */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
